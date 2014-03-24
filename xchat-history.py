@@ -14,7 +14,7 @@ from email.MIMEText import MIMEText
 
 
 def message_cb(word, word_eol, userdata):
-    #Recupera a mensagem enviada
+    #Recupera a mensagem enviada 
     comando = word[1]
     #Cria um vetor com cada palavra
     messages = comando.split(" ")
