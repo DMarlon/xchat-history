@@ -59,7 +59,7 @@ def recuperalog(diainicial,horainicial, diafinal, horafinal):
     #Variaveis para determinar a linha inicial e final
     linhainicio = 0
     linhafinal = 0
-    #Loop para recuperar a linha inicial e final de ontem o historico deve ser copiado
+    #Loop para recuperar a linha inicial e final de onde o historico deve ser copiado
     for linha, valor in enumerate(text):
         #Recupera a hora e a data de uma linha do arquivo de log
         dia = datetime.datetime.fromtimestamp(int(valor[2:13])).strftime('%d-%m-%Y')
